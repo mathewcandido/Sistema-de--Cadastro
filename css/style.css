@@ -1,0 +1,197 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+html,body{
+  height:auto;
+  scroll-behavior: smooth;  
+}
+
+
+
+.form{
+  width:100%;
+  max-width: 1000px;
+  height: 150px;
+  margin: 0 auto;
+  background:rgb(74, 102, 155);
+  display:flex;
+  
+}
+section .nome{
+  width:80%;
+  margin:35px auto;
+  display: flex;
+  justify-content: space-around;
+
+}
+label{
+  color:white;
+}
+
+section .box1{
+  width: 350px;
+}
+section .box2{
+  margin-top: 2px;
+  width: 220px;
+  display:flex;
+  
+}
+section .nome input[type="text"]{
+  width: 320px;
+  height:30px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  text-transform: uppercase;
+}
+section select{
+  width: 100px;
+  height:30px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+}
+
+
+section .nome input[type="submit"],button{
+  margin-top: 22px;
+  margin-left:10px ;
+  width:80px;
+  height:30px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+
+
+}
+
+section .nome input[type="submit"]:hover{
+  background-color: #7a7ab4;
+  
+}
+
+button:hover{
+
+  background-color: #6363e0;
+}
+
+/*********************************************/
+
+
+.lista{
+  width:100%;
+  max-width: 1000px;
+  height:auto;
+  margin: 0 auto;
+  background:rgb(191, 191, 230);
+  display:flex;
+}
+ table{
+     
+    width: 95%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px auto;
+    border-collapse: collapse;
+  }
+  
+ 
+  table {
+    width: 80%;
+  }
+
+  td,
+  th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd),
+  table.list thead > tr {
+    background-color:lightblue;
+  }
+ 
+  a {
+    cursor: pointer;
+    background:#5b5be0;
+    padding: 8px;
+    color:white;
+    margin-right: 4px;
+    border: 1px solid black;
+  }
+  
+  label.validation-error {
+    color:black;
+    margin-left: 5px;
+    font-size: 18px;
+  }
+  
+  .hide ,.hide1{
+    display: none;
+  }
+
+  .hide-ancora{
+    border: none;
+    background: #3d3d7300;
+    padding: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+/**
+
+  <div class="opcao">
+                            <label for=sala><p>Sala:</p></label>
+                            <select id="opcao" >
+                              <option>Sala 01</option>
+                                <option>Sala 02</option>
+                            </select>
+                        
+                        <div>
+                            <label for="cafe"><p>Café:</p></label>
+                            <select id="cafe" >
+                                <option>Espaço 01</option>
+                                <option>Espaço 02</option>
+                            </select>
+                        </div>
+ 
+   <div class="cadastro">
+                    <label for="nome"><p>Cadastro:</p></label>
+                    <input type="text" id="nome" placeholder="nome" >
+                    </div>
+                
+                       
+                            </div>
+                    <div class="form-action-buttons">  
+                        <input type="submit" id="botao" value="adicionar" onclick="start()">
+                        </div>
+ 
+ 
+  */

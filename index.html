@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudando js</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="crud.js"></script>
+
+  <section class="form">
+
+    <div class="nome">
+      <div class="box1">
+        <label for="nome">Name and Surname:</label>
+        <label class="validation-error hide" id="validateName">*REQUIRED*.</label>
+        <input type="text" id="nome" placeholder="Name and Surname">
+      </div>
+
+      <div class="box2">
+        <div>
+          <label for="sala"> Events Room:</label>
+          <select id="opcao">
+            <option>Room1</option>
+            <option>Room2</option>
+            <option>Room3</option>
+            <option>Room4</option>
+          </select>
+        </div>
+        <div>
+          <label for=cafe>Coffe Break:</label>
+          <select id="cafe">
+            <option>Cofferom1</option>
+            <option>Cofferom2</option>
+          </select>
+        </div>
+      </div><!--box2-->
+
+      <div>
+        <a class="hide-ancora" href="#listabusca"><button type="button" onclick="search()">Search</button></a>
+      </div>
+      <div>
+        <input type="submit" id="botão" value="Register" onclick="insert();">
+      </div>
+
+    </div>
+    <!--nome-->
+  </section>
+
+  <section  class="lista">
+    <td>
+      <table class="list" id="mytable">
+        <thead>
+          <tr>
+            <th>Name:</th>
+            <th>Room:</th>
+            <th>Coffe Break:</th>
+            <th>Actions:</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </td>
+  </section>
+
+  
+  <a class="hide-ancora" name="listabusca"></a>
+    <section class="lista">
+    <td>
+      <table class="list hide1" id="busca">
+        <thead>
+          <tr>
+            <th>Name:</th>
+            <th>Room:</th>
+            <th>Coffe:</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </td>
+  </section>
+
+</body>
+
+</html>
